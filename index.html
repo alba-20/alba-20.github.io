@@ -3,25 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Venta de Carros - AutoShop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--son titulos-->
-    <!-- son comentarios -->
-<h1>titulo de la pagina</h1>
-<h2>titulo segundario</h2>
-<h3>titulo tres</h3>
-<h4>titulo cuatro</h4>
-<h5>titulo cinco</h5>
-<h6>titulo seis</h6>
-<p>parrafo 1</p>
-<a href="https://www.gogole.com">ir a gogole</a>
-<a href="tel:+3203142801">llamar</a>
-<a href="http://talentoteachoriente.com">ir a pagina</a>
-<a href="mailto:mayealba20@gmail.com">ir a gmail</a>
-<a href="http://talentotechoriente.com" target="_blank" rel="noopener noreferrer">ir pagina</a>
-<img src="foto" alt="foto de perfil" width="300" height=""300>
-<video src="video.mp4" loop autoplay controls height="300" width="500"></video>
-</a>
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#cars">Vehículos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de inicio -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenidos a AutoShop</h1>
+            <p>Compra el auto de tus sueños hoy mismo.</p>
+        </div>
+    </section>
+
+    <!-- Sección de vehículos -->
+    <section id="cars" class="cars-list">
+        <h2>Vehículos Disponibles</h2>
+        <div class="car-grid">
+            <!-- Vehículo 1 -->
+            <div class="car-card">
+                <img src="images/mustang.avif" alt="Carro 1">
+                <h3>Ford Mustang</h3>
+                <p>Año: 2021</p>
+                <p>Precio: $30,000</p>
+                <button>Más Información</button>
+            </div>
+            <!-- Vehículo 2 -->
+            <div class="car-card">
+                <img src="https://via.placeholder.com/300x200" alt="Carro 2">
+                <h3>Chevrolet Camaro</h3>
+                <p>Año: 2020</p>
+                <p>Precio: $28,000</p>
+                <button>Más Información</button>
+            </div>
+            <!-- Vehículo 3 -->
+            <div class="car-card">
+                <img src="https://via.placeholder.com/300x200" alt="Carro 3">
+                <h3>Toyota Corolla</h3>
+                <p>Año: 2022</p>
+                <p>Precio: $22,000</p>
+                <button>Más Información</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contact" class="contact-form">
+        <h2>Contáctanos</h2>
+        <form action="#" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AutoShop - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
