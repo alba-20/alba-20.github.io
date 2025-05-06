@@ -256,3 +256,65 @@ html {
 .tab-content.active {
   display: block;
 }
+
+.bienvenida {
+  background-image: url("negro.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.bienvenida::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* oscurece la imagen para mejor contraste */
+  z-index: 1;
+}
+
+.contenido-bienvenida {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.bienvenida h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.bienvenida p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.bienvenida .btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.bienvenida .btn:hover {
+  background-color: #45a049;
+}

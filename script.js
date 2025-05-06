@@ -1,24 +1,28 @@
 const jabones = {
   eucalipto: {
     titulo: "Jabón Eucalipto",
-    descripcion: "Ideal para pieles grasas. Refresca, limpia y tiene propiedades antisépticas naturales.",
-    imagen: "eucalipto.avif"
+    descripcion:
+      "Ideal para pieles grasas. Refresca, limpia y tiene propiedades antisépticas naturales.",
+    imagen: "eucalipto.avif",
   },
   miel: {
     titulo: "Jabón Miel",
-    descripcion: "Nutre e hidrata profundamente la piel. Ideal para pieles secas y sensibles.",
-    imagen: "miel.webp"
+    descripcion:
+      "Nutre e hidrata profundamente la piel. Ideal para pieles secas y sensibles.",
+    imagen: "miel.webp",
   },
   sabila: {
     titulo: "Jabón Sábila",
-    descripcion: "Con extracto de aloe vera que ayuda a regenerar la piel, calmar irritaciones y quemaduras.",
-    imagen: "sabila.jpg"
+    descripcion:
+      "Con extracto de aloe vera que ayuda a regenerar la piel, calmar irritaciones y quemaduras.",
+    imagen: "sabila.jpg",
   },
   calendula: {
     titulo: "Jabón Caléndula",
-    descripcion: "Antiinflamatorio natural, perfecto para pieles delicadas o con acné.",
-    imagen: "calendula.jpg"
-  }
+    descripcion:
+      "Antiinflamatorio natural, perfecto para pieles delicadas o con acné.",
+    imagen: "calendula.jpg",
+  },
 };
 
 // Mostrar modal
@@ -31,7 +35,8 @@ document.querySelectorAll(".info-btn").forEach((btn) => {
     const jabon = jabones[key];
 
     document.getElementById("modal-title").textContent = jabon.titulo;
-    document.getElementById("modal-description").textContent = jabon.descripcion;
+    document.getElementById("modal-description").textContent =
+      jabon.descripcion;
     document.getElementById("modal-image").src = jabon.imagen;
     document.getElementById("modal").style.display = "block";
   });
@@ -54,7 +59,7 @@ document.getElementById("buy-button").addEventListener("click", () => {
 });
 
 // Validar formulario
-document.querySelector("form").addEventListener("submit", function(event){
+document.querySelector("form").addEventListener("submit", function (event) {
   event.preventDefault();
 
   const name = document.getElementById("name").value.trim();
@@ -71,7 +76,7 @@ document.querySelector("form").addEventListener("submit", function(event){
 
 // Ocultar bienvenida al hacer clic en "Tipos" o "Contacto"
 document.querySelector('a[href="#jabones"]').addEventListener("click", () => {
-  document.querySelector(".hero-eucalipto").style.display = "none";
+  document.querySelector(".hero-negro.").style.display = "none";
 });
 
 document.querySelector('a[href="#contact"]').addEventListener("click", () => {
@@ -80,14 +85,13 @@ document.querySelector('a[href="#contact"]').addEventListener("click", () => {
 
 // Mostrar bienvenida cuando se haga clic en "Inicio"
 document.querySelector('a[href="#home"]').addEventListener("click", () => {
-  document.querySelector(".hero-eucalipto").style.display = "flex";  // Mostrar la sección de bienvenida
+  document.querySelector(".hero-eucalipto").style.display = "flex"; // Mostrar la sección de bienvenida
 });
 
 // Mostrar bienvenida cuando se haga clic en "Inicio"
 document.querySelector('a[href="#home"]').addEventListener("click", () => {
-  document.querySelector(".hero-eucalipto").style.display = "flex";  // Mostrar la sección de bienvenida
+  document.querySelector(".hero-eucalipto").style.display = "flex"; // Mostrar la sección de bienvenida
 });
-
 // Mostrar bienvenida al hacer clic en "Inicio"
 const inicioBtn = document.getElementById("inicio-btn");
 const bienvenida = document.getElementById("bienvenida");
